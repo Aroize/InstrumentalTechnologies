@@ -20,10 +20,10 @@ public class Main {
     public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println("Need Input File and Output file paths");
-            System.exit(1);
+            System.exit(2);
         }
-        FileTransfer transfer = new FileTransferImpl();
-        boolean result = transfer.transfer(args[0], args[1]);
+        FileTransfer transferClass = new FileTransferImpl();
+        boolean result = transferClass.transfer(args[0], args[1]);
         if (result) {
             System.out.println("Everything is OK");
         } else {
