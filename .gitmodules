@@ -1,3 +1,6 @@
 [submodule "IniParser"]
 	path = IniParser
 	url = https://github.com/Aroize/IniParser
+[submodule "Android-YearView-MonthView"]
+	path = Android-YearView-MonthView
+	url = https://github.com/Aroize/Android-YearView-MonthView
