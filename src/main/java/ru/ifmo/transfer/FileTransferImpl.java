@@ -5,6 +5,7 @@ import ru.ifmo.reader.FileReaderImpl;
 import ru.ifmo.writer.FileWriter;
 import ru.ifmo.writer.FileWriterImpl;
 
+import java.io.File;
 import java.io.IOException;
 
 /**
@@ -53,5 +54,9 @@ public class FileTransferImpl implements FileTransfer {
             reader.close();
             writer.close();
         }
+    }
+
+    public boolean transfer(File inFile, File outFile) {
+        return transfer(inFile.getAbsolutePath(), outFile.getAbsolutePath());
     }
 }
