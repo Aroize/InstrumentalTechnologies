@@ -14,6 +14,16 @@ import java.io.IOException;
  * Project : SampleProject
  */
 public class FileTransferImpl implements FileTransfer {
+
+
+    /**
+     * Transfer File
+     * <p>
+     * Transfers content of one file to another
+     * @param inFile - string, that represents input file path
+     * @param outFile - string, that represents output file path
+     * @return true if everything went successfully; false if smth went wrong
+     */
     @Override
     public boolean transfer(String inFile, String outFile) {
         FileReader reader = new FileReaderImpl();
