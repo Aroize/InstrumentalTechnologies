@@ -1,0 +1,3 @@
+[submodule "IniParser"]
+	path = IniParser
+	url = https://github.com/Aroize/IniParser
